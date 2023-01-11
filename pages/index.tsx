@@ -139,7 +139,7 @@ export default function Home() {
               <h1 className="text-[58px] text-[#ffffff] tracking-[-3px]">QUESTIONS?</h1>
               <p className="text-[17px] text-[#ffffff] mb-[20px]">If you have any questions please contact us through our <br></br>contact page.</p>
               <button className="flex flex-row text-[#536942] px-[35px] py-[15px] mt-[40px] bg-[#FFD936] hover:bg-[#dab200] rounded-lg justify-center items-center w-[200px] h-[50px]">
-                <span className="text-[14px]">Let's Talk Now</span>
+                <span className="text-[14px]">Let&apos;s Talk Now</span>
               </button>
             </div>
           </div>
