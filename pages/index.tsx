@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import "@fontsource/dm-sans";
 
@@ -18,12 +19,12 @@ export default function Home() {
         </div>
         <div className="relative z-10">
           <div className="flex flex-row mx-auto items-center justify-between px-[20px] md:mx-[51.5px] py-[10px]">
-            <a href="/" className="DESKTOP-ICON hidden lg:flex md:py-[16px]">
+            <Link href="/" className="DESKTOP-ICON hidden lg:flex md:py-[16px]">
               <img src="/510-books-Media-02-smaller-150x150.png" alt="logo" />
-            </a>
-            <a href="/" className="MOBILE-ICON flex lg:hidden py-[16px]">
+            </Link>
+            <Link href="/" className="MOBILE-ICON flex lg:hidden py-[16px]">
               <img src="/cropped-510-books-Media-02-smaller-32x32.png" alt="logo" />
-            </a>
+            </Link>
             <nav>
               <section className="MOBILE-MENU flex lg:hidden">
                 <div className="p-4 space-y-2 bg-[#FFD936] rounded-full shadow">
@@ -34,16 +35,16 @@ export default function Home() {
               </section>
               <ul className="DESKTOP-MENU hidden lg:flex justify-center items-center">
                 <li className="hover:border-b-2">
-                  <a href="/" className="text-[16px] text-[#ffffff] px-[16px]">Home</a>
+                  <Link href="/" className="text-[16px] text-[#ffffff] px-[16px]">Home</Link>
                 </li>
                 <li className="hover:border-b-2">
-                  <a href="/" className="text-[16px] text-[#ffffff] px-[16px]">Services</a>
+                  <Link href="/" className="text-[16px] text-[#ffffff] px-[16px]">Services</Link>
                 </li>
                 <li className="hover:border-b-2">
-                  <a href="/" className="text-[16px] text-[#ffffff] px-[16px]">Contact</a>
+                  <Link href="/" className="text-[16px] text-[#ffffff] px-[16px]">Contact</Link>
                 </li>
                 <li className="pr-[10px] hover:border-b-2">
-                  <a href="/" className="text-[16px] text-[#ffffff] px-[16px]">Free Book Pickups</a>
+                  <Link href="/" className="text-[16px] text-[#ffffff] px-[16px]">Free Book Pickups</Link>
                 </li>
                 <li className="pl-[10px]">
                   <button className="py-[15px] px-[25px] rounded border border-[#ffffff]">
@@ -150,28 +151,28 @@ export default function Home() {
             <div className="md:flex md:justify-center md:items-center">
               <ul className="md:flex md:flex-row space-y-[12px] md:space-y-[0px] md:gap-[12px]">
                 <li className="hover:text-[#9FCE00]">
-                  <a href="/" className="text-[16px]">Home</a>
+                  <Link href="/" className="text-[16px]">Home</Link>
                 </li>
                 <li className="hover:text-[#9FCE00]">
-                  <a href="/" className="text-[16px]">Services</a>
+                  <Link href="/" className="text-[16px]">Services</Link>
                 </li>
                 <li className="hover:text-[#9FCE00]">
-                  <a href="/" className="text-[16px]">Contact</a>
+                  <Link href="/" className="text-[16px]">Contact</Link>
                 </li>
                 <li className="hover:text-[#9FCE00]">
-                  <a href="/" className="text-[16px]">Free Book Pickups</a>
+                  <Link href="/" className="text-[16px]">Free Book Pickups</Link>
                 </li>
               </ul>
             </div>
             <div>
-              <a href="/" className="DESKTOP-ICON hidden lg:flex">
+              <Link href="/" className="DESKTOP-ICON hidden lg:flex">
                 <img src="/cropped-510-books-Media-02-smaller-180x180.png" alt="logo" />
-              </a>
-              <a href="/" className="MOBILE-ICON flex lg:hidden py-[16px]">
+              </Link>
+              <Link href="/" className="MOBILE-ICON flex lg:hidden py-[16px]">
                 <img src="/510-books-Media-02-smaller-150x150.png" alt="logo" />
-              </a>
+              </Link>
             </div>
-            <div className="md:flex md:flex-row md:justify-center md:items-center md:space-y-[0px] md:gap-[8px]">Copyright © 2019 <a href="/" className="text-[#FFD936]">510books.com</a></div>
+            <div className="md:flex md:flex-row md:justify-center md:items-center md:space-y-[0px] md:gap-[8px]">Copyright © 2019 <Link href="/" className="text-[#FFD936]">510books.com</Link></div>
           </div>
         </div>
       </section>
