@@ -57,7 +57,7 @@ export default function Home() {
           <div className="container mx-auto xl:px-32 pt-6 md:pb-20 xl:pb-16">
             <div className="mx-auto items-center justify-between text-center md:mx-[101.5px]">
               <div className="flex flex-col p-[10px] justify-center items-center">
-                <h1 className="text-[25px] md:text-[50px] text-[#ffffff] tracking-[-3px]">Welcome to...</h1>
+                <h1 className="text-[25px] md:text-[50px] text-[#ffffff] tracking-[-3px]">Welcome to&hellip;</h1>
                 <h1 className="text-[43px] md:text-[86px] text-[#ffffff] tracking-[-3px] -mt-[24px]">510 Books & Media!</h1>
                 <p className="text-[16px] text-[#ffffff]">Your Pomona book, music, movie, and game store destination.</p>
                 <p className="text-[16px] text-[#ffffff]">Visit our local store for an awesome selection of books and media and</p>
@@ -117,7 +117,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row mx-auto lg:mx-[50px] justify-center items-canter">
             <div className="flex flex-col mx-auto md:py-[10px] lg:pl-[25px] md:pr-[35px]">
               <h2 className="text-[10px] md:text-[12px] text-[#536941B3]">ABOUT US</h2>
-              <h1 className="text-[20px] md:text-[40px] font-serif">We've been selling books and media since 2019 right here in Pomona.</h1>
+              <h1 className="text-[20px] md:text-[40px] font-serif">We&apos;ve been selling books and media since 2019 right here in Pomona.</h1>
               <p className="text-[16px] text-[#536941CC] md:py-[20px]">It all started out online with reselling books, then CDs, records,  tapes, video games etc. soon after. Our first location on Bonita Ave opened in 2019 with once a month sales and thenin 2022 we switched to being open every week. We are now expanding to downtown Pomona with a stand alone bookstore.</p>
               <button className="py-[10px] px-[35px] mt-[8px] md:mt-[0px] w-[175px] h-[50px] rounded border border-[#536942] hover:border-[#9FCE00] hover:text-[#9FCE00]">
                 <span className="text-[15px]">Find Out More</span>
@@ -172,7 +172,7 @@ export default function Home() {
                 <img src="/510-books-Media-02-smaller-150x150.png" alt="logo" />
               </Link>
             </div>
-            <div className="md:flex md:flex-row md:justify-center md:items-center md:space-y-[0px] md:gap-[8px]">Copyright © 2019 <Link href="/" className="text-[#FFD936]">510books.com</Link></div>
+            <div className="md:flex md:flex-row md:justify-center md:items-center md:space-y-[0px] md:gap-[8px]">Copyright &copy; 2019 <Link href="/" className="text-[#FFD936]">510books.com</Link></div>
           </div>
         </div>
       </section>
