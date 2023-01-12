@@ -75,7 +75,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="stores-services" className="relative text-[#536942] text-center py-[50px] md:py-[70px]">
+      <section id="stores-services" className="relative text-[#536942] text-center py-[50px] md:py-[70px] bg-[#ffffff]">
         <div className="relative z-10">
           <div className="mx-auto p-[10px]">
             <h1 className="text-[40px] tracking-[-2px]">Our Stores & Services</h1>
@@ -106,13 +106,13 @@ export default function Home() {
             <svg width="46" height="38" viewBox="0 0 46 38" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-[12px]">
               <path d="M20.6614 28.8167C20.6614 33.1133 16.7004 37.0402 11.7484 37.0402C3.56585 37.0402 0 30.9867 0 22.9061C0 13.6313 9.34862 4.68667 17.8304 0.959727L20.0961 4.60889C13.1077 7.99535 7.88433 12.5869 7.14413 20.2849H10.0352C13.1311 20.2849 16.3472 20.784 18.4942 23.0089C20.025 24.5976 20.6614 26.6202 20.6614 28.8167ZM46 28.8167C46 33.1133 42.0389 37.0402 37.087 37.0402C28.9044 37.0402 25.3385 30.9866 25.3385 22.9061C25.3385 13.6312 34.6872 4.68666 43.1689 0.959717L45.4346 4.60888C38.4462 7.99534 33.2229 12.5868 32.4827 20.2849C35.6358 20.2849 38.2518 20.1706 40.5819 21.0044C44.2108 22.3029 46 25.1081 46 28.8167Z" fill="#536941" />
             </svg>
-            <h1 className="mx-auto text-[24px] md:text-[35px] tracking-[-2px] md:px-[80px] pt-[10px] pb-[20px] mb-[24px] font-serif">“Cool place, a mix of vintage records, cds, books and movies of all types. I had a fun time browsing and found some great indy music for very cheap prices.”</h1>
+            <h1 className="mx-auto text-[24px] md:text-[35px] tracking-[-2px] md:px-[80px] pt-[10px] pb-[20px] mb-[24px] md:max-w-2xl font-serif">“Cool place, a mix of vintage records, cds, books and movies of all types. I had a fun time browsing and found some great indy music for very cheap prices.”</h1>
             <img src="/avatar_1.jpg" className="w-[50px] h-[50px] mx-auto mb-[12px]" alt="Testimonial Avatar" />
             <p className="text-[14px] text-[#52684080]">Mr. Smitty</p>
           </div>
         </div>
       </section>
-      <section id="about" className="relative text-[#536942] py-[50px] md:py-[70px] px-[25px] md:px-[25px]">
+      <section id="about" className="relative text-[#536942] py-[50px] md:py-[70px] px-[25px] md:px-[25px] bg-[#ffffff]">
         <div className="relative z-10 container md:w-[1343px] mx-auto">
           <div className="flex flex-col md:flex-row mx-auto lg:mx-[50px] justify-center items-canter">
             <div className="flex flex-col mx-auto md:py-[10px] lg:pl-[25px] md:pr-[35px]">
@@ -145,7 +145,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="footer" className="relative text-[#536942] text-center pt-[32px] pb-[15px] md:py-[30px]">
+      <section id="footer" className="relative text-[#536942] text-center pt-[32px] pb-[15px] md:py-[30px] bg-[#ffffff]">
         <div className="relative z-10 container md:w-[1343px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 md:mx-[71.5px] md:gap-[50px] justify-items-center content-center">
             <div className="md:flex md:justify-center md:items-center">
