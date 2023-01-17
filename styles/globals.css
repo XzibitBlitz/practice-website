@@ -90,6 +90,10 @@ body {
   font-family: "DM Sans";
 }
 
+h1.forum {
+  font-family: "Forum", cursive;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

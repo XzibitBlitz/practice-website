@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import "@fontsource/dm-sans";
+import "@fontsource/forum";
 
 export default function Home() {
   return (
@@ -13,166 +14,168 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section id="hero" className="relative text-[#ffffff] text-center">
+      <section id="hero" className="text-[#ffffff] text-center lg:pb-[145px]">
         <div className={"absolute top-0 bottom-0 right-0 left-0"}>
-          <img className={"w-full h-full object-cover object-bottom"} src={"/vintage-books-antique-book-pages.jpg"} />
+          <img className={"w-full h-full object-cover object-center"} src={"/vintage-books-antique-book-pages.jpg"} />
         </div>
         <div className="relative z-10">
-          <div className="flex flex-row mx-auto items-center justify-between px-[20px] md:mx-[51.5px] py-[10px]">
-            <Link href="/" className="DESKTOP-ICON hidden lg:flex md:py-[16px]">
-              <img src="/510-books-Media-02-smaller-150x150.png" alt="logo" />
-            </Link>
-            <Link href="/" className="MOBILE-ICON flex lg:hidden py-[16px]">
-              <img src="/cropped-510-books-Media-02-smaller-32x32.png" alt="logo" />
-            </Link>
-            <nav>
-              <section className="MOBILE-MENU flex lg:hidden">
-                <div className="p-4 space-y-2 bg-[#FFD936] rounded-full shadow">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>
-                </div>
-              </section>
-              <ul className="DESKTOP-MENU hidden lg:flex justify-center items-center">
-                <li className="hover:border-b-2">
-                  <Link href="/" className="text-[16px] text-[#ffffff] px-[16px]">Home</Link>
-                </li>
-                <li className="hover:border-b-2">
-                  <Link href="/" className="text-[16px] text-[#ffffff] px-[16px]">Services</Link>
-                </li>
-                <li className="hover:border-b-2">
-                  <Link href="/" className="text-[16px] text-[#ffffff] px-[16px]">Contact</Link>
-                </li>
-                <li className="pr-[10px] hover:border-b-2">
-                  <Link href="/" className="text-[16px] text-[#ffffff] px-[16px]">Free Book Pickups</Link>
-                </li>
-                <li className="pl-[10px]">
-                  <button className="py-[15px] px-[25px] rounded border border-[#ffffff]">
-                    <span className="text-[16px] text-[#ffffff]">626-400-9294</span>
-                  </button>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div className="container mx-auto xl:px-32 pt-6 md:pb-20 xl:pb-16">
-            <div className="mx-auto items-center justify-between text-center md:mx-[101.5px]">
-              <div className="flex flex-col p-[10px] justify-center items-center">
-                <h1 className="text-[25px] md:text-[50px] text-[#ffffff] tracking-[-3px]">Welcome to&hellip;</h1>
-                <h1 className="text-[43px] md:text-[86px] text-[#ffffff] tracking-[-3px] -mt-[24px]">510 Books & Media!</h1>
-                <p className="text-[16px] text-[#ffffff]">Your Pomona book, music, movie, and game store destination.</p>
-                <p className="text-[16px] text-[#ffffff]">Visit our local store for an awesome selection of books and media and</p>
-                <p className="text-[16px] text-[#ffffff]">bring in your loved books and media for cash or credit.</p>
-                <button className="flex flex-row text-[#54595F] px-[35px] py-[15px] mt-[40px] bg-[#FFD936] hover:bg-[#dab200] rounded-lg justify-center items-center w-[200px] h-[50px]">
-                  <span className="text-[14px] font-bold mr-[8px]">
-                    Visit Our Store
-                  </span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                    <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clipRule="evenodd" />
-                  </svg>
-                </button>
-              </div>
+          <div id="mobile_nav" className="grid grid-cols-2 items-center gap-[20px] lg:hidden">
+            <div className="flex items-center mt-[5px] ml-[20px] py-[16px]">
+              <Link href="/" className="pr-[16px]">
+                <img src="/favicon.ico" alt="logo" />
+              </Link>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="stores-services" className="relative text-[#536942] text-center py-[50px] md:py-[70px] bg-[#ffffff]">
-        <div className="relative z-10">
-          <div className="mx-auto p-[10px]">
-            <h1 className="text-[40px] tracking-[-2px]">Our Stores & Services</h1>
-            <div className="mx-auto border-b-4 border-[#FFD936] w-[90px] h-[20px]"></div>
-            <div className="flex flex-col md:flex-row pt-[25px] justify-center">
-              <div className="flex flex-col p-[15px] w-[344px]">
-                <img src="/20220301_082812-scaled.jpg" className="max-w-full h-[210px] mb-[30px]" alt="Bonita Store Location Image" />
-                <h1 className="text-[20px] text-start mb-[9px]">748 E Bonita Store</h1>
-                <p className="text-[16px] text-start">Our first retail book and media store packed with over 13k books, CDs, vinyl records, DVDs, Blu-rays, video games, audiobooks and VHS/cassette tapes.</p>
-              </div>
-              <div className="flex flex-col p-[15px] w-[344px]">
-                <img src="/pomona-bookstore-books.jpg" className="max-w-full h-[210px] mb-[30px]" alt="Pomona Location Image" />
-                <h1 className="text-[20px] text-start mb-[9px]">155 W 2nd St Store (Arts Colony)</h1>
-                <p className="text-[16px] text-start">OPENING SOON: Our second store located in the heart of the downtown Pomona Arts Colony is a bookstore with over 10k curated books.</p>
-              </div>
-              <div className="flex flex-col p-[15px] w-[344px]">
-                <img src="/free-book-pick-up-service-southern-california.jpg" className="max-w-full h-[210px] mb-[30px]" alt="Book Pickup Service Image" />
-                <h1 className="text-[20px] text-start mb-[9px]">Book & Media Pick-Up Service</h1>
-                <p className="text-[16px] text-start">We will pick up your gently used books and media, including records, CDs, DVDs, video games etc. Let us do the packing, hauling and rehoming.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="testimonial" className="relative text-[#536942] text-center bg-[#f6f8f5] pt-[35px] pb-[28px] md:py-[50px]">
-        <div className="relative z-10 px-[25px] xl:px-[171px]">
-          <div className="flex flex-col mx-auto py-[20px]">
-            <svg width="46" height="38" viewBox="0 0 46 38" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-[12px]">
-              <path d="M20.6614 28.8167C20.6614 33.1133 16.7004 37.0402 11.7484 37.0402C3.56585 37.0402 0 30.9867 0 22.9061C0 13.6313 9.34862 4.68667 17.8304 0.959727L20.0961 4.60889C13.1077 7.99535 7.88433 12.5869 7.14413 20.2849H10.0352C13.1311 20.2849 16.3472 20.784 18.4942 23.0089C20.025 24.5976 20.6614 26.6202 20.6614 28.8167ZM46 28.8167C46 33.1133 42.0389 37.0402 37.087 37.0402C28.9044 37.0402 25.3385 30.9866 25.3385 22.9061C25.3385 13.6312 34.6872 4.68666 43.1689 0.959717L45.4346 4.60888C38.4462 7.99534 33.2229 12.5868 32.4827 20.2849C35.6358 20.2849 38.2518 20.1706 40.5819 21.0044C44.2108 22.3029 46 25.1081 46 28.8167Z" fill="#c4ccbe" />
-            </svg>
-            <h1 className="mx-auto text-[24px] md:text-[35px] tracking-[-2px] md:px-[80px] pt-[10px] pb-[20px] mb-[24px] md:max-w-2xl font-serif">“Cool place, a mix of vintage records, cds, books and movies of all types. I had a fun time browsing and found some great indy music for very cheap prices.”</h1>
-            <img src="/avatar_1.jpg" className="w-[50px] h-[50px] mx-auto mb-[12px]" alt="Testimonial Avatar" />
-            <p className="text-[14px] text-[#52684080]">Mr. Smitty</p>
-          </div>
-        </div>
-      </section>
-      <section id="about" className="relative text-[#536942] py-[50px] md:py-[70px] px-[25px] md:px-[25px] bg-[#ffffff]">
-        <div className="relative z-10 container md:w-[1343px] mx-auto">
-          <div className="flex flex-col md:flex-row mx-auto lg:mx-[50px] justify-center items-canter">
-            <div className="flex flex-col mx-auto md:py-[10px] lg:pl-[25px] md:pr-[35px]">
-              <h2 className="text-[10px] md:text-[12px] text-[#536941B3]">ABOUT US</h2>
-              <h1 className="text-[20px] md:text-[40px] font-serif">We&apos;ve been selling books and media since 2019 right here in Pomona.</h1>
-              <p className="text-[16px] text-[#536941CC] md:py-[20px]">It all started out online with reselling books, then CDs, records,  tapes, video games etc. soon after. Our first location on Bonita Ave opened in 2019 with once a month sales and thenin 2022 we switched to being open every week. We are now expanding to downtown Pomona with a stand alone bookstore.</p>
-              <button className="py-[10px] px-[35px] mt-[8px] md:mt-[0px] w-[175px] h-[50px] rounded border border-[#536942] hover:border-[#9FCE00] hover:text-[#9FCE00]">
-                <span className="text-[15px]">Find Out More</span>
+            <div className="flex justify-end lg:hidden">
+              <button className="flex justify-center items-center bg-[#FFD936] rounded-full mt-[5px] mr-[20px] p-[8px] h-[43px] w-[43px]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
               </button>
             </div>
-            <div className="flex mx-auto mt-[12px] md:mt-[0px] lg:p-[10px] justify-center items-canter">
-              <img src="/20220301_082945-scaled.jpg" className="max-w-full h-auto mb-[30px]" alt="Picture of one of the store locations" />
+          </div>
+          <div id="desktop_nav" className="hidden lg:grid grid-cols-2 my-[10px] mx-auto mx-[51.500px] px-[20px] py-[17px] text-[#ffffff]">
+            <div className="flex items-center justify-start">
+              <Link href="/"><img src="/510-books-Media-02-smaller-150x150.png" alt="Desktop Logo" className="pr-[16px]" /></Link>
+            </div>
+            <div className="flex flex-row items-center justify-end">
+              <button className="h-1/2 hover:border-b-2"><Link href="/" className="text-[16px] px-[16px]">Home</Link></button>
+              <button className="h-1/2 hover:border-b-2"><Link href="/" className="text-[16px] px-[16px]">Services</Link></button>
+              <button className="h-1/2 hover:border-b-2"><Link href="/" className="text-[16px] px-[16px]">Contact</Link></button>
+              <button className="h-1/2 hover:border-b-2"><Link href="/" className="text-[16px] px-[16px]">Free Book Pickups</Link></button>
+              <button className="ml-[10px] py-[15px] px-[25px] rounded border border-[#ffffff]">
+                <span className="text-[15px]">626-400-9294</span>
+              </button>
+            </div>
+          </div>
+          <div className="flex p-[10px] -mt-[21px] text-center justify-center items-center text-[#ffffff] lg:mx-[101.500px]">
+            <div className="flex flex-col">
+              <h1 className="text-[44px] lg:text-[50px] tracking-[-3px] leading-tight -mb-[10px]">Welcome to&hellip;</h1>
+              <h1 className="text-[72px] lg:text-[86px] tracking-[-2px] lg:tracking-[-3px] leading-tight lg:-mt-[12px]">510 Books & Media!</h1>
+              <p className="text-[14px] lg:text-[16px] leading-normal">Your Pomona book, music, movie, and game store destination.</p>
+              <p className="text-[14px] lg:text-[16px] leading-normal">Visit our local store for an awesome selection of books and media and</p>
+              <p className="text-[14px] lg:text-[16px] leading-normal">bring in your loved books and media for cash or credit.</p>
+              <button className="flex flex-row text-[#54595F] px-[35px] py-[15px] mt-[33px] bg-[#FFD936] hover:bg-[#dab200] rounded-lg justify-center items-center w-[200px] h-[50px] mx-auto">
+                <span className="text-[14px] font-bold mr-[8px]">
+                  Visit Our Store
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                  <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clipRule="evenodd" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <section id="faq" className="relative text-[#ffffff] text-center py-[12px] md:py-[80px]">
+      <section id="stores_and_services" className="relative bg-[#ffffff] py-[50px] lg:-mt-[33px] text-[#536942] text-center">
+        <div className="flex flex-col lg:mx-[101.500px] p-[10px] mx-auto leading-relaxed justify-center">
+          <h1 className="text-[34px] lg:text-[40px] tracking-[-2px] mb-[15px]">Our Stores & Services</h1>
+          <div className="mx-auto border-t-[3px] border-[#FFD936] w-1/5 lg:w-1/12 h-[24px]"></div>
+          <div className="lg:flex lg:flex-row">
+            <div className="flex flex-col px-[15px] pt-[30px] pb-[40px] justify-center items-center lg:justify-start mx-auto">
+              <img src="/20220301_082812-scaled.jpg" className="max-w-full h-auto lg:h-[210px] mb-[17px]" alt="Bonita Store Location Image" />
+              <div className="flex flex-col px-[10px] pt-[6px] text-start">
+                <h2 className="text-[20px] mb-[9px]">748 E Bonita Store</h2>
+                <p className="text-[16px] leading-relaxed">Our first retail book and media store packed with over 13k books, CDs, vinyl records, DVDs, Blu-rays, video games, audiobooks and VHS/cassette tapes.</p>
+              </div>
+            </div>
+            <div className="flex flex-col px-[15px] pt-[30px] pb-[40px] justify-center items-center lg:justify-start mx-auto">
+              <img src="/pomona-bookstore-books.jpg" className="max-w-full h-auto lg:h-[210px] mb-[17px]" alt="Pomona Location Image" />
+              <div className="flex flex-col px-[10px] pt-[6px] text-start">
+                <h2 className="text-[20px] mb-[9px]">155 W 2nd St Store (Arts Colony)</h2>
+                <p className="text-[16px] leading-relaxed">OPENING SOON: Our second store located in the heart of the downtown Pomona Arts Colony is a bookstore with over 10k curated books.</p>
+              </div>
+            </div>
+            <div className="flex flex-col px-[15px] pt-[30px] pb-[40px] justify-center items-center lg:justify-start mx-auto">
+              <img src="/free-book-pick-up-service-southern-california.jpg" className="max-w-full h-auto lg:h-[210px] mb-[17px]" alt="Book Pickup Service Image" />
+              <div className="flex flex-col px-[10px] pt-[6px] text-start">
+                <h2 className="text-[20px] mb-[9px]">Book & Media Pick-Up Service</h2>
+                <p className="text-[16px] leading-relaxed">We will pick up your gently used books and media, including records, CDs, DVDs, video games etc. Let us do the packing, hauling and rehoming.</p>
+              </div>
+            </div>
+          </div>
+          <div className="hidden flex flex-col px-[15px] pt-[30px] pb-[40px] justify-center items-center mx-auto">
+            <img src="/20220301_082812-scaled.jpg" className="max-w-full h-auto mb-[17px]" alt="Bonita Store Location Image" />
+            <div className="flex flex-col px-[10px] pt-[6px] text-start">
+              <h2 className="text-[20px] mb-[9px]">748 E Bonita Store</h2>
+              <p className="text-[16px] leading-relaxed">Our first retail book and media store packed with over 13k books, CDs, vinyl records, DVDs, Blu-rays, video games, audiobooks and VHS/cassette tapes.</p>
+            </div>
+          </div>
+          <div className="hidden flex flex-col px-[15px] pt-[30px] pb-[40px] justify-center items-center mx-auto">
+            <img src="/pomona-bookstore-books.jpg" className="max-w-full h-auto mb-[17px]" alt="Pomona Location Image" />
+            <div className="flex flex-col px-[10px] pt-[6px] text-start">
+              <h2 className="text-[20px] mb-[9px]">155 W 2nd St Store (Arts Colony)</h2>
+              <p className="text-[16px] leading-relaxed">OPENING SOON: Our second store located in the heart of the downtown Pomona Arts Colony is a bookstore with over 10k curated books.</p>
+            </div>
+          </div>
+          <div className="hidden flex flex-col px-[15px] pt-[30px] pb-[40px] justify-center items-center mx-auto">
+            <img src="/free-book-pick-up-service-southern-california.jpg" className="max-w-full h-auto mb-[17px]" alt="Book Pickup Service Image" />
+            <div className="flex flex-col px-[10px] pt-[6px] text-start">
+              <h2 className="text-[20px] mb-[9px]">Book & Media Pick-Up Service</h2>
+              <p className="text-[16px] leading-relaxed">We will pick up your gently used books and media, including records, CDs, DVDs, video games etc. Let us do the packing, hauling and rehoming.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonial" className="relative bg-[#f6f8f5] pt-[35px] pb-[28px] lg:px-[105.3125px] text-[#536942] text-center">
+        <div className="flex flex-col lg:mx-[171px] mx-auto py-[20px] space-y-[20px]">
+          <svg width="46" height="38" viewBox="0 0 46 38" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto w-[34px] h-[28px] lg:w-[37px] lg:h-[30.563px]">
+            <path d="M20.6614 28.8167C20.6614 33.1133 16.7004 37.0402 11.7484 37.0402C3.56585 37.0402 0 30.9867 0 22.9061C0 13.6313 9.34862 4.68667 17.8304 0.959727L20.0961 4.60889C13.1077 7.99535 7.88433 12.5869 7.14413 20.2849H10.0352C13.1311 20.2849 16.3472 20.784 18.4942 23.0089C20.025 24.5976 20.6614 26.6202 20.6614 28.8167ZM46 28.8167C46 33.1133 42.0389 37.0402 37.087 37.0402C28.9044 37.0402 25.3385 30.9866 25.3385 22.9061C25.3385 13.6312 34.6872 4.68666 43.1689 0.959717L45.4346 4.60888C38.4462 7.99534 33.2229 12.5868 32.4827 20.2849C35.6358 20.2849 38.2518 20.1706 40.5819 21.0044C44.2108 22.3029 46 25.1081 46 28.8167Z" fill="#c4ccbe" />
+          </svg>
+          <h1 className="forum px-[25px] lg:px-[80px] lg:pt-[10px] lg:pb-[20px] text-[24px] lg:text-[35px] tracking-[-1.5px] leading-[38px]">“Cool place, a mix of vintage records, cds, books and movies of all types. I had a fun time browsing and found some great indy music for very cheap prices.”</h1>
+          <div className="pt-[5px] lg:pt-[0px]">
+            <img src="/avatar_1.jpg" className="pt-[5px] lg:pt-[0px] w-[50px] h-[49.11px] lg:h-[49.109px] object-cover mx-auto" alt="Testimonial Avatar" />
+            <p className="text-[14px] text-[#52684080] mt-[10px]">Mr. Smitty</p>
+          </div>
+        </div>
+      </section>
+      <section id="about" className="relative bg-[#ffffff] text-[#536942] py-[50px] px-[25px]">
+        <div className="flex flex-col lg:flex-row lg:mx-[101.500px]">
+          <div className="flex flex-col space-y-[20px] py-[10px] lg:pl-[10px] lg:pr-[250px]">
+            <p className="text-[12px] text-[#536941B3]">ABOUT US</p>
+            <h1 className="forum text-[35px] leading-[40px] tracking-[-2px]">We&apos;ve been selling books and media since 2019 right here in Pomona.</h1>
+            <p className="text-[16px] py-[15px]">It all started out online with reselling books, then CDs, records,  tapes, video games etc. soon after. Our first location on Bonita Ave opened in 2019 with once a month sales and thenin 2022 we switched to being open every week. We are now expanding to downtown Pomona with a stand alone bookstore.</p>
+            <button className="py-[10px] px-[35px] mt-[8px] w-[175px] h-[50px] rounded border border-[#536942] hover:border-[#9FCE00] hover:text-[#9FCE00]">
+              <span className="text-[14px]">Find Out More</span>
+            </button>
+          </div>
+          <p className="hidden text-[12px] text-[#536941B3]">ABOUT US</p>
+          <h1 className="hidden forum text-[35px] leading-[40px] tracking-[-2px]">We&apos;ve been selling books and media since 2019 right here in Pomona.</h1>
+          <p className="hidden text-[16px] py-[15px]">It all started out online with reselling books, then CDs, records,  tapes, video games etc. soon after. Our first location on Bonita Ave opened in 2019 with once a month sales and thenin 2022 we switched to being open every week. We are now expanding to downtown Pomona with a stand alone bookstore.</p>
+          <button className="hidden py-[10px] px-[35px] mt-[8px] w-[175px] h-[50px] rounded border border-[#536942] hover:border-[#9FCE00] hover:text-[#9FCE00]">
+            <span className="text-[14px]">Find Out More</span>
+          </button>
+          <div className="lg:flex p-[10px] items-start hidden">
+            <img src="/20220301_082945-scaled.jpg" className="max-w-full h-auto p-[16px]" alt="Picture of one of the store locations" />
+          </div>
+        </div>
+      </section>
+      <section id="faq" className="relative text-[#ffffff] text-center py-[32px] lg:h-[480px] lg:py-[110px]">
         <div className={"absolute top-0 bottom-0 right-0 left-0"}>
           <img className={"w-full h-full object-cover object-bottom"} src={"/leather-bound-vintage-books.jpg"} />
         </div>
         <div className="relative z-10">
-          <div className="md:mx-[101.5px]">
-            <div className="flex flex-col items-center justify-center">
-              <h1 className="text-[58px] text-[#ffffff] tracking-[-3px]">QUESTIONS?</h1>
-              <p className="text-[17px] text-[#ffffff] mb-[20px]">If you have any questions please contact us through our <br></br>contact page.</p>
-              <button className="flex flex-row text-[#536942] px-[35px] py-[15px] mt-[40px] bg-[#FFD936] hover:bg-[#dab200] rounded-lg justify-center items-center w-[200px] h-[50px]">
-                <span className="text-[14px]">Let&apos;s Talk Now</span>
-              </button>
-            </div>
+          <div className="flex flex-col lg:mx-[101.500px] p-[10px] space-y-[20px] items-center justify-center">
+            <h1 className="text-[42px] lg:text-[58px] tracking-[-1.5px] lg:tracking-[-2px]">QUESTIONS?</h1>
+            <p className="text-[17px] leading-[32px] lg:leading-[32px] mb-[20px] lg:mt-[5px] lg:pb-[25px] lg:px-[336px]">If you have any questions please contact us through our contact page.</p>
+            <button className="flex flex-row text-[#536942] px-[35px] lg:px-[40px] py-[15px] lg:py-[17px] mt-[40px] bg-[#FFD936] hover:bg-[#dab200] rounded-lg justify-center items-center w-[200px] lg:w-[169.594px] h-[50px] lg:h-[48px]">
+              <span className="text-[14px]">Let&apos;s Talk Now</span>
+            </button>
           </div>
         </div>
       </section>
-      <section id="footer" className="relative text-[#536942] text-center pt-[32px] pb-[15px] md:py-[30px] bg-[#ffffff]">
-        <div className="relative z-10 container md:w-[1343px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 md:mx-[71.5px] md:gap-[50px] justify-items-center content-center">
-            <div className="md:flex md:justify-center md:items-center">
-              <ul className="md:flex md:flex-row space-y-[12px] md:space-y-[0px] md:gap-[12px]">
-                <li className="hover:text-[#9FCE00]">
-                  <Link href="/" className="text-[16px]">Home</Link>
-                </li>
-                <li className="hover:text-[#9FCE00]">
-                  <Link href="/" className="text-[16px]">Services</Link>
-                </li>
-                <li className="hover:text-[#9FCE00]">
-                  <Link href="/" className="text-[16px]">Contact</Link>
-                </li>
-                <li className="hover:text-[#9FCE00]">
-                  <Link href="/" className="text-[16px]">Free Book Pickups</Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <Link href="/" className="DESKTOP-ICON hidden lg:flex">
-                <img src="/cropped-510-books-Media-02-smaller-180x180.png" alt="logo" />
-              </Link>
-              <Link href="/" className="MOBILE-ICON flex lg:hidden py-[16px]">
-                <img src="/510-books-Media-02-smaller-150x150.png" alt="logo" />
-              </Link>
-            </div>
-            <div className="md:flex md:flex-row md:justify-center md:items-center md:space-y-[0px] md:gap-[8px]">Copyright &copy; 2019 <Link href="/" className="text-[#FFD936]">510books.com</Link></div>
+      <section id="footer" className="relative bg-[#ffffff] text-[#536942] py-[35px] lg:py-[30px] px-[25px] lg:px-[0px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 space-y-[10px] lg:space-y-[0px] lg:mx-[71.500px] lg:gap-[24px] items-center justify-center text-center">
+          <div className="flex flex-col lg:flex-row lg:flex-wrap lg:ml-[40px] items-center justify-start space-y-[10px] lg:space-y-[0px] lg:gap-[14px] lg:place-content-evenly">
+            <button className="hover:text-[#9FCE00]"><Link href="/" className="text-[14.592px] lg:text-[16px] px-[20px] pb-[10px] lg:px-[0px] lg:pb-[0px]">Home</Link></button>
+            <button className="hover:text-[#9FCE00]"><Link href="/" className="text-[14.592px] lg:text-[16px] px-[20px] pb-[10px] lg:px-[0px] lg:pb-[0px]">Services</Link></button>
+            <button className="hover:text-[#9FCE00]"><Link href="/" className="text-[14.592px] lg:text-[16px] px-[20px] pb-[10px] lg:px-[0px] lg:pb-[0px]">Contact</Link></button>
+            <button className="hover:text-[#9FCE00]"><Link href="/" className="text-[14.592px] lg:text-[16px] px-[20px] pb-[10px] lg:px-[0px] lg:pb-[0px]">Free Book Pickups</Link></button>
+          </div>
+          <div className="flex mx-auto items-center justify-center lg:w-[157.141px] lg:h-[157.141px]">
+            <img src="/cropped-510-books-Media-02-smaller-300x300.png" alt="Mobile Footer Logo" className="mb-[10px] lg:mb-[0px]" />
+          </div>
+          <div className="flex items-center justify-center lg:justify-end flex-wrap">
+            <p className="text-[14.592px] lg:text-[16px]">Copyright &copy; 2019 <Link href="/" className="text-[#FFD936]">510books.com</Link></p>
           </div>
         </div>
       </section>
