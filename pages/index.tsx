@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section id="hero" className="text-[#ffffff] text-center lg:pb-[145px] 2xl:min-h-[655px]">
+      <section id="hero" className="text-[#ffffff] text-center lg:pb-[100px] xl:pb-[145px] lg:min-h-[480px] 2xl:min-h-[655px]">
         <div className={"absolute top-0 bottom-0 right-0 left-0"}>
           <img className={"w-full h-full object-cover object-bottom"} src={"/vintage-books-antique-book-pages.jpg"} />
         </div>
@@ -33,11 +33,11 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div id="desktop_nav" className="hidden lg:grid grid-cols-2 my-[10px] mx-auto lg:mx-[51.500px] 2xl:mx-[651.500px] px-[20px] py-[17px] text-[#ffffff]">
+          <div id="desktop_nav" className="hidden lg:grid grid-cols-3 my-[10px] lg:mx-[0px] lg:py-[0px] xl:mx-[51.500px] 2xl:mx-[651.500px] px-[20px] py-[17px] text-[#ffffff]">
             <div className="flex items-center justify-start">
               <Link href="/"><img src="/510-books-Media-02-smaller-150x150.png" alt="Desktop Logo" className="pr-[16px]" /></Link>
             </div>
-            <div className="flex flex-row items-center justify-end">
+            <div className="flex flex-row items-center justify-end col-span-2">
               <button className="h-1/2 hover:border-b-2"><Link href="/" className="text-[16px] px-[16px]">Home</Link></button>
               <button className="h-1/2 hover:border-b-2"><Link href="/" className="text-[16px] px-[16px]">Services</Link></button>
               <button className="h-1/2 hover:border-b-2"><Link href="/" className="text-[16px] px-[16px]">Contact</Link></button>
@@ -47,7 +47,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="flex p-[10px] -mt-[21px] text-center justify-center items-center text-[#ffffff] lg:mx-[101.500px] 2xl:mx-[701.500px]">
+          <div className="flex p-[10px] -mt-[21px] lg:-mt-[98px] xl:-mt-[0px] text-center justify-center items-center text-[#ffffff] lg:mx-[101.500px] 2xl:mx-[701.500px]">
             <div className="flex flex-col">
               <div className="text-[44px] md:text-[50px] tracking-[-3px] leading-tight mb-[33px]">
                 <h1>Welcome to&hellip;</h1>
@@ -75,27 +75,27 @@ export default function Home() {
         </div>
       </section>
       <section id="stores_and_services" className="relative bg-[#ffffff] py-[50px] lg:-mt-[60px] text-[#536942] text-center">
-        <div className="flex flex-col lg:mx-[101.500px] 2xl:mx-[701.500px] p-[10px] mx-auto leading-relaxed justify-center">
+        <div className="flex flex-col xl:mx-[101.500px] 2xl:mx-[701.500px] p-[10px] mx-auto leading-relaxed justify-center">
           <h1 className="text-[34px] md:text-[38px] lg:text-[40px] tracking-[-2px] mb-[15px]">Our Stores & Services</h1>
           <div className="mx-auto border-t-[3px] border-[#FFD936] w-1/5 md:w-1/12 h-[24px]"></div>
           <div className="md:flex md:flex-row">
-            <div className="flex flex-col px-[15px] pt-[30px] pb-[40px] justify-center items-center md:justify-start mx-auto">
-              <img src="/20220301_082812-scaled.jpg" className="max-w-full h-auto md:w-[219.33px] md:h-[210px] mb-[17px]" alt="Bonita Store Location Image" />
-              <div className="flex flex-col px-[10px] pt-[6px] text-start">
+            <div className="flex flex-col px-[15px] pt-[30px] pb-[40px] justify-center items-center md:justify-start">
+              <img src="/20220301_082812-scaled.jpg" className="max-w-full h-auto md:w-[219.33px] md:h-[210px] lg:w-[298.98px] xl:w-[343.33px] xl:h-[210px] mb-[17px]" alt="Bonita Store Location Image" />
+              <div className="flex flex-col px-[10px] pt-[6px] xl:w-[323.328px] xl:h-[145.750px] text-start">
                 <h2 className="text-[20px] mb-[9px]">748 E Bonita Store</h2>
                 <p className="text-[16px] leading-relaxed">Our first retail book and media store packed with over 13k books, CDs, vinyl records, DVDs, Blu-rays, video games, audiobooks and VHS/cassette tapes.</p>
               </div>
             </div>
-            <div className="flex flex-col px-[15px] pt-[30px] pb-[40px] justify-center items-center md:justify-start mx-auto">
-              <img src="/pomona-bookstore-books.jpg" className="max-w-full h-auto md:w-[219.33px] md:h-[210px] mb-[17px]" alt="Pomona Location Image" />
-              <div className="flex flex-col px-[10px] pt-[6px] text-start">
+            <div className="flex flex-col px-[15px] pt-[30px] pb-[40px] justify-center items-center md:justify-start">
+              <img src="/pomona-bookstore-books.jpg" className="max-w-full h-auto md:w-[219.33px] md:h-[210px] lg:w-[298.98px] xl:w-[343.33px] xl:h-[210px] mb-[17px]" alt="Pomona Location Image" />
+              <div className="flex flex-col px-[10px] pt-[6px] xl:w-[323.328px] xl:h-[145.750px] text-start">
                 <h2 className="text-[20px] mb-[9px]">155 W 2nd St Store (Arts Colony)</h2>
                 <p className="text-[16px] leading-relaxed">OPENING SOON: Our second store located in the heart of the downtown Pomona Arts Colony is a bookstore with over 10k curated books.</p>
               </div>
             </div>
-            <div className="flex flex-col px-[15px] pt-[30px] pb-[40px] justify-center items-center md:justify-start mx-auto">
-              <img src="/free-book-pick-up-service-southern-california.jpg" className="max-w-full h-auto md:w-[219.33px] lg:h-[210px] mb-[17px]" alt="Book Pickup Service Image" />
-              <div className="flex flex-col px-[10px] pt-[6px] text-start">
+            <div className="flex flex-col px-[15px] pt-[30px] pb-[40px] justify-center items-center md:justify-start">
+              <img src="/free-book-pick-up-service-southern-california.jpg" className="max-w-full h-auto md:w-[219.33px] lg:w-[298.98px] xl:w-[343.33px] md:h-[210.11px] mb-[17px]" alt="Book Pickup Service Image" />
+              <div className="flex flex-col px-[10px] pt-[6px] xl:w-[323.328px] xl:h-[145.750px] text-start">
                 <h2 className="text-[20px] mb-[9px]">Book & Media Pick-Up Service</h2>
                 <p className="text-[16px] leading-relaxed">We will pick up your gently used books and media, including records, CDs, DVDs, video games etc. Let us do the packing, hauling and rehoming.</p>
               </div>
@@ -103,8 +103,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="testimonial" className="relative bg-[#f6f8f5] pt-[35px] pb-[28px] lg:px-[105.3125px] 2xl:px-[701.500px] text-[#536942] text-center">
-        <div className="flex flex-col lg:mx-[171px] mx-auto py-[20px] space-y-[20px]">
+      <section id="testimonial" className="relative bg-[#f6f8f5] pt-[35px] pb-[28px] xl:px-[105.3125px] 2xl:px-[701.500px] text-[#536942] text-center">
+        <div className="flex flex-col xl:mx-[171px] mx-auto py-[20px] space-y-[20px]">
           <svg width="46" height="38" viewBox="0 0 46 38" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto w-[34px] h-[28px] lg:w-[37px] lg:h-[30.563px]">
             <path d="M20.6614 28.8167C20.6614 33.1133 16.7004 37.0402 11.7484 37.0402C3.56585 37.0402 0 30.9867 0 22.9061C0 13.6313 9.34862 4.68667 17.8304 0.959727L20.0961 4.60889C13.1077 7.99535 7.88433 12.5869 7.14413 20.2849H10.0352C13.1311 20.2849 16.3472 20.784 18.4942 23.0089C20.025 24.5976 20.6614 26.6202 20.6614 28.8167ZM46 28.8167C46 33.1133 42.0389 37.0402 37.087 37.0402C28.9044 37.0402 25.3385 30.9866 25.3385 22.9061C25.3385 13.6312 34.6872 4.68666 43.1689 0.959717L45.4346 4.60888C38.4462 7.99534 33.2229 12.5868 32.4827 20.2849C35.6358 20.2849 38.2518 20.1706 40.5819 21.0044C44.2108 22.3029 46 25.1081 46 28.8167Z" fill="#c4ccbe" />
           </svg>
@@ -115,9 +115,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="about" className="relative bg-[#ffffff] text-[#536942] py-[50px] px-[25px]">
-        <div className="flex flex-col md:flex-row lg:mx-[101.500px] 2xl:mx-[701.500px]">
-          <div className="flex flex-col space-y-[20px] py-[10px] lg:pl-[10px] lg:pr-[250px]">
+      <section id="about" className="relative bg-[#ffffff] text-[#536942] py-[50px] lg:py-[70px] px-[25px] lg:px-[25px]">
+        <div className="flex flex-col md:flex-row xl:mx-[101.500px] 2xl:mx-[701.500px]">
+          <div className="flex flex-col space-y-[20px] py-[10px] lg:pr-[35px] xl:pl-[10px] xl:pr-[250px]">
             <p className="text-[12px] text-[#536941B3]">ABOUT US</p>
             <h1 className="forum text-[35px] leading-[40px] tracking-[-2px]">We&apos;ve been selling books and media since 2019 right here in Pomona.</h1>
             <p className="text-[16px] py-[15px]">It all started out online with reselling books, then CDs, records,  tapes, video games etc. soon after. Our first location on Bonita Ave opened in 2019 with once a month sales and thenin 2022 we switched to being open every week. We are now expanding to downtown Pomona with a stand alone bookstore.</p>
@@ -125,17 +125,17 @@ export default function Home() {
               <span className="text-[14px]">Find Out More</span>
             </button>
           </div>
-          <div className="md:flex p-[10px] md:items-center lg:items-start hidden">
-            <img src="/20220301_082945-scaled.jpg" className="max-w-full h-auto p-[16px]" alt="Picture of one of the store locations" />
+          <div className="md:flex p-[10px] lg:p-[0px] md:items-center xl:items-start hidden">
+            <img src="/20220301_082945-scaled.jpg" className="max-w-full h-auto p-[16px] lg:p-[0px]" alt="Picture of one of the store locations" />
           </div>
         </div>
       </section>
-      <section id="faq" className="relative text-[#ffffff] text-center py-[32px] md:h-[370px] md:py-[70px] lg:h-[480px] lg:py-[110px]">
+      <section id="faq" className="relative text-[#ffffff] text-center py-[32px] md:h-[370px] md:py-[70px] lg:h-[370px] xl:h-[480px] lg:py-[40px] xl:py-[110px]">
         <div className={"absolute top-0 bottom-0 right-0 left-0"}>
           <img className={"w-full h-full object-cover object-bottom"} src={"/leather-bound-vintage-books.jpg"} />
         </div>
         <div className="relative z-10">
-          <div className="flex flex-col lg:mx-[101.500px] 2xl:mx-[701.500px] p-[10px] space-y-[20px] items-center justify-center">
+          <div className="flex flex-col xl:mx-[101.500px] 2xl:mx-[701.500px] p-[10px] space-y-[20px] items-center justify-center">
             <h1 className="text-[42px] lg:text-[58px] tracking-[-1.5px] lg:tracking-[-2px]">QUESTIONS?</h1>
             <p className="text-[17px] leading-[32px] lg:leading-[32px] mb-[20px] lg:mt-[5px] lg:pb-[25px] lg:px-[336px]">If you have any questions please contact us through our contact page.</p>
             <button className="flex flex-row text-[#536942] px-[35px] lg:px-[40px] py-[15px] lg:py-[17px] mt-[40px] bg-[#FFD936] hover:bg-[#dab200] rounded-lg justify-center items-center w-[200px] lg:w-[169.594px] h-[50px] lg:h-[48px]">
@@ -145,17 +145,17 @@ export default function Home() {
         </div>
       </section>
       <section id="footer" className="relative bg-[#ffffff] text-[#536942] py-[35px] lg:py-[30px] px-[25px] lg:px-[0px]">
-        <div className="grid grid-cols-1 lg:grid-cols-3 space-y-[10px] lg:space-y-[0px] lg:mx-[71.500px] 2xl:mx-[671.500px] lg:gap-[24px] items-center justify-center text-center">
-          <div className="flex flex-col md:flex-row md:mx-auto lg:flex-wrap lg:ml-[40px] items-center justify-start space-y-[10px] md:space-y-[0px] lg:gap-[14px] lg:place-content-evenly">
+        <div className="grid grid-cols-1 lg:grid-cols-3 space-y-[10px] lg:space-y-[0px] xl:mx-[71.500px] 2xl:mx-[671.500px] lg:gap-[50px] xl:gap-[24px] items-center justify-center text-center">
+          <div className="flex flex-col md:flex-row md:mx-auto lg:flex-wrap lg:ml-[40px] items-center justify-start space-y-[10px] md:space-y-[0px] lg:gap-[14px] xl:place-content-evenly">
             <button className="hover:text-[#9FCE00]"><Link href="/" className="text-[14.592px] lg:text-[16px] px-[20px] pb-[10px] lg:px-[0px] lg:pb-[0px]">Home</Link></button>
             <button className="hover:text-[#9FCE00]"><Link href="/" className="text-[14.592px] lg:text-[16px] px-[20px] pb-[10px] lg:px-[0px] lg:pb-[0px]">Services</Link></button>
             <button className="hover:text-[#9FCE00]"><Link href="/" className="text-[14.592px] lg:text-[16px] px-[20px] pb-[10px] lg:px-[0px] lg:pb-[0px]">Contact</Link></button>
             <button className="hover:text-[#9FCE00]"><Link href="/" className="text-[14.592px] lg:text-[16px] px-[20px] pb-[10px] lg:px-[0px] lg:pb-[0px]">Free Book Pickups</Link></button>
           </div>
-          <div className="flex mx-auto items-center justify-center lg:w-[157.141px] lg:h-[157.141px]">
+          <div className="flex mx-auto items-center justify-center lg:w-[129.578px] xl:w-[157.141px] lg:h-[129.578px] xl:h-[157.141px]">
             <img src="/cropped-510-books-Media-02-smaller-300x300.png" alt="Mobile Footer Logo" className="mb-[10px] lg:mb-[0px]" />
           </div>
-          <div className="flex items-center justify-center lg:justify-end flex-wrap">
+          <div className="flex items-center justify-center lg:justify-end flex-wrap lg:mr-[40px]">
             <p className="text-[14.592px] lg:text-[16px]">Copyright &copy; 2019 <Link href="/" className="text-[#FFD936]">510books.com</Link></p>
           </div>
         </div>
